@@ -1,0 +1,24 @@
+server:
+  port: 8091
+  error:
+    include-message: always
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/customer?currentSchema=public
+    username: springuser
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: false
+ 
+       
+    
+  main:
+    web-application-type: servlet
+
+   
